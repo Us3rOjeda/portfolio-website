@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+* {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .a-from-nav {
+    @apply text-[13px] uppercase pt-0 pb-0 pl-[1em] pr-[1em] font-[500] font-sans tracking-wider;
+  }
+  .toggle-color {
+    @apply transition ease-in-out duration-1000
+  }
+}
+
+@theme {
+  --font-times: "Times New Roman"
+}
