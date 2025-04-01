@@ -21,9 +21,12 @@ function Technologies ({ darkMode, isEnglish }) {
           <li>Next JS</li>
         </ul>
         <ul className={`flex flex-col gap-6 font-bold ${darkMode ? 'text-[#d5d5d5]' : 'text-[#2a2a2a]'} toggle-color`}>
+          <li>Redux</li>
+          <li>Redux Toolkit</li>
           <li>GSAP</li>
           <li>Three JS</li>
           <li>Git</li>
+          <li>Git Bash</li>
         </ul>
       </div>
     </section>

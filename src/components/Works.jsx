@@ -25,26 +25,28 @@ function Works({ darkMode, isEnglish }) {
           <div>
             <div>
               <div className='flex flex-row gap-8 justify-items-center'>
-                <h2 
+                <a 
+                  href='https://solaris-ecommerce-nextjs.onrender.com' 
+                  target='_blank'
                   className={`text-xl tracking-wider pb-5 font-semibold ${darkMode ? 'text-white' : ''} cursor-pointer toggle-color`}
                 >
                   SOLARIS E-COMMERCE
-                </h2>
+                </a>
               </div>
             </div>
             <p className={`w-[320px] text-[18px] sm:w-[540px] font-[400] ${darkMode ? 'text-[#e5e5e5]' : 'text-gray-800'} toggle-color`}>
             {`${isEnglish ? 
               'Fullstack development of an ecommerce platform, focusing on an intuitive user experience, modern design, and smooth navigation.' : 
-              'Desarrollo Fullstack de una plataforma ecommerce, enfocada en una experiencia de usuario intuitiva, diseño moderno y navegación fluida.'}`}
+              'Desarrollo Fullstack de una plataforma ecommerce completamente responsive, enfocada en una experiencia de usuario intuitiva, diseño moderno y navegación fluida.'}`}
             </p>
             <ul className={`grid grid-cols-4 gap-2 mt-8 sm:flex sm:gap-8 ${darkMode ? 'text-white' : 'text-black'} toggle-color`}>
               <li className='font-bold'>MySQL</li>
               <li className='font-bold'>Node JS</li>
               <li className='font-bold'>Express</li>
-              <li className='font-bold'>JS</li>
+              <li className='font-bold'>TS</li>
               <li className='font-bold'>React</li>
-              <li className='font-bold'>Next JS</li>
-              <li className='font-bold'>GSAP</li>
+              <li className='font-bold'>Redux Toolkit</li>
+              <li className='font-bold'>Next</li>
             </ul>
           </div>
         </div>
