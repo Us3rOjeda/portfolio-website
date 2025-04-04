@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <div className={`${isDarkMode ? 'bg-[#1a1a1a]' : ''} toggle-color relative`}>
-      <Header darkMode={isDarkMode} setDarkMode={setIsDarkMode} isEnglish={isEnglish} />
+      <Header darkMode={isDarkMode} setDarkMode={setIsDarkMode} isEnglish={isEnglish} setIsEnglish={setIsEnglish}/>
       <Works darkMode={isDarkMode} isEnglish={isEnglish} />
       <Technologies darkMode={isDarkMode} isEnglish={isEnglish} />
       <div className='lg:grid lg:grid-cols-2 lg:gap-24 w-full h-[90vh]'>

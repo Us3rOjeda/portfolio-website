@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
-function Header({ darkMode, setDarkMode, isEnglish }) {
+function Header({ darkMode, setDarkMode, isEnglish, setIsEnglish }) {
   const [showButton, setShowButton] = useState(false);
 
   useGSAP(() => {
@@ -38,6 +38,16 @@ function Header({ darkMode, setDarkMode, isEnglish }) {
         >
           {`${isEnglish ? 'Frontend Web Developer' : 'Desarrollador Web Frontend'}`}
         </p>
+        <button
+          onClick={() => setIsEnglish(!isEnglish)}
+          className={`
+            cursor-pointer text-sm font-semibold 
+            font-sans hover:scale-95 mb-10 
+            ${darkMode ? 'text-gray-200 border-white' : 'text-gray-950 border-black'} 
+            toggle-color border-[1px]  p-4`}
+        >
+          {`${isEnglish ? 'Idioma Español' : 'Change to English'}`}
+        </button>
     </header>
   );
 }
