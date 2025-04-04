@@ -10,6 +10,7 @@ function Header({ darkMode, setDarkMode, isEnglish, setIsEnglish }) {
 
     tl.to('#name', { opacity: 1, y: 0 })
       .to('#employee-function', { opacity: 1, delay: 0.3 })
+      .to('#language-btn', { opacity: 1, delay: 0 })
       .to('.a-from-nav', { opacity: 1, stagger: 0.2, delay: 0.6 });
   }, []);
 
@@ -39,12 +40,13 @@ function Header({ darkMode, setDarkMode, isEnglish, setIsEnglish }) {
           {`${isEnglish ? 'Frontend Web Developer' : 'Desarrollador Web Frontend'}`}
         </p>
         <button
+          id="language-btn"
           onClick={() => setIsEnglish(!isEnglish)}
           className={`
-            cursor-pointer text-sm font-semibold 
-            font-sans hover:scale-95 mb-10 
+            cursor-pointer text-md
+            hover:scale-95 mb-10 opacity-0
             ${darkMode ? 'text-gray-200 border-white' : 'text-gray-950 border-black'} 
-            toggle-color border-[1px]  p-4`}
+            toggle-color border-[1px] tracking-wider p-4`}
         >
           {`${isEnglish ? 'Idioma Español' : 'Change to English'}`}
         </button>
